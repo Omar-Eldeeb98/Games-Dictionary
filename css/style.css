@@ -171,7 +171,7 @@ nav.navbar ul li a {
     left: 0;
     height: 100%;
     background-color: black;
-    z-index: 999;
+    z-index: 99999;
     display: flex;
     justify-content: center;
     align-items: center;
