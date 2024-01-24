@@ -16,4 +16,4 @@ https://omar-eldeeb98.github.io/Games-Dictionary/
 https://rapidapi.com/digiwalls/api/free-to-play-games-database/
 
 # Tools & Technologies :
-html5 , css3 , bootstrap5 , responsive , javascript 
+html5 , css3 , bootstrap5 , responsive , javascript , api 
