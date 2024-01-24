@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games Dictionary</title>
+    <!-- website logo  -->
+    <link rel="shortcut icon" href="./images/logo-sm.png" type="image/x-icon" />
+    <!-- developer name  -->
+    <meta name="author" content="Dev / Omar Eldeeb" />
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap"
+      rel="stylesheet" />
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- fontAwesome  -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <div class="fixed_item">
+      <p><span class="text-danger">By</span></p>
+      <p><span>O</span></p>
+      <p><span>M</span></p>
+      <p><span>A</span></p>
+      <p><span>R</span></p>
+    </div>
+    <div class="loading">
+      <span class="loader"></span>
+    </div>
+    <section id="games" class="">
+      <!--^======================================================== Navbar ==================================================== -->
+
+      <nav id="navbar-example" class="navbar navbar-expand-lg">
+        <div class="container shadow-lg">
+          <div class="logo">
+            <img src="./images/logo-sm.png" class="me-2" alt="" />GAMES REVIEWS
+          </div>
+          <button
+            class="navbar-toggler bg-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  role="button"
+                  data-category="mmorpg"
+                  >MMORPG</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" role="button" data-category="shooter"
+                  >SHOOTER</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" role="button" data-category="sailing"
+                  >SAILING</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" role="button" data-category="permadeath"
+                  >PERMADEATH</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" role="button" data-category="superhero"
+                  >SUPERHERO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" role="button" data-category="pixel"
+                  >PIXEL</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--^======================================================== Navbar ==================================================== -->
+
+      <!--^======================================================== home section ==================================================== -->
+      <section id="home" class="text-white">
+        <div class="container">
+          <div id="games_home" class="row gy-3 pb-3 mt-3 p-4"></div>
+        </div>
+      </section>
+      <!--^======================================================== home section ==================================================== -->
+    </section>
+
+    <!--^======================================================== details section ==================================================== -->
+
+    <section id="details" class="text-white position-relative d-none">
+      <div class="container">
+        <div id="game_details_" class="row p-3 gy-4"></div>
+      </div>
+    </section>
+
+    <!-- ^======================================================== details section  ====================================================-->
+
+    <!-- bootstrap js file  -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- main js file  -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

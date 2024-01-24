@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #272B30;
+    font-family: 'Nerko One', cursive;
+}
+
+/*================================================= navbar =====================================================================*/
+nav.navbar {
+    background-color: #272B30 !important;
+    background-image: url("../images/wraper.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 4px;
+    position: relative;
+}
+
+nav.navbar .container {
+    background-color: #3A497B !important;
+    padding: 12px !important;
+    border-radius: 8px;
+    margin-top: 5%;
+    width: 90%;
+    margin-bottom: 10px;
+
+}
+
+nav.navbar ul li a {
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.logo {
+    color: white;
+    font-weight: normal;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+}
+
+.nav-item .nav-link:hover {
+    color: #0A8CBE !important;
+    transition: all 0.5s;
+}
+
+.nav-item .nav-link.active {
+    color: #0A8CBE !important;
+}
+
+.navbar-toggler:focus {
+    border: none;
+    box-shadow: none;
+}
+
+/*================================================= navbar =====================================================================*/
+
+/*================================================= home =====================================================================*/
+.card {
+    filter: grayscale(0.7);
+    transition: all 0.5s;
+    cursor: pointer;
+    background-color: #3A497B !important;
+
+}
+
+.card:hover {
+    filter: grayscale(0);
+    transform: scale(1.05);
+
+}
+
+/*================================================= home =====================================================================*/
+
+/*================================================= details =====================================================================*/
+#details {
+    min-height: 100vh;
+
+}
+
+#details .container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#details .container .row {
+    width: 100% !important;
+}
+
+#close_btn {
+    cursor: pointer;
+}
+
+.images_container {
+    margin-top: 10px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.image_container {
+    width: 200px;
+    height: 100px;
+    margin-right: 5px;
+    border: 1px solid #0a8bbea0;
+
+}
+
+
+.close_btn_container {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 0, 0, 0.696);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close_btn_container i {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.game_details_header {
+    background-color: rgba(255, 0, 0, 0.434);
+    border-radius: 8px;
+    padding-inline: 25px !important;
+    padding-block: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.left_sec {
+    height: fit-content !important;
+    background-color: rgba(0, 0, 0, 0.585);
+    padding: 13px !important;
+    border-radius: 10px;
+}
+
+.title_span {
+    background-color: var(--bs-gray-900);
+    letter-spacing: 1px;
+}
+
+/*================================================= details =====================================================================*/
+
+/*================================================= details =====================================================================*/
+.loading {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: black;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*================================================= details =====================================================================*/
+
+/*================================================= details =====================================================================*/
+.loader {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: rotate(45deg);
+    overflow: hidden;
+}
+
+.loader:after {
+    content: '';
+    position: absolute;
+    inset: 8px;
+    margin: auto;
+    background: #222b32;
+}
+
+.loader:before {
+    content: '';
+    position: absolute;
+    inset: -15px;
+    margin: auto;
+    background: #de3500;
+    animation: diamondLoader 2s linear infinite;
+}
+
+@keyframes diamondLoader {
+
+    0%,
+    10% {
+        transform: translate(-64px, -64px) rotate(-45deg)
+    }
+
+    90%,
+    100% {
+        transform: translate(0px, 0px) rotate(-45deg)
+    }
+}
+
+/*================================================= details =====================================================================*/
+
+.fixed_item {
+    background-color: #3A497B;
+    position: fixed;
+    top: 95%;
+    right: 8px;
+    padding-inline: 8px;
+    padding-block: 5px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: top 0.5s;
+    font-family: 'Courier New', Courier, monospace !important;
+    z-index: 99999;
+    cursor: pointer;
+}
+
+
+
+.fixed_item:hover {
+    top: 62%;
+}
+
+.fixed_item p {
+    font-weight: bold;
+    color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #373B3E;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.fixed_item p span {
+    font-size: 14px;
+}
